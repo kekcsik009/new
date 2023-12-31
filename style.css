@@ -1,0 +1,291 @@
+/* body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.section {
+  background-color: #fab1a0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.envelope {
+  position: relative;
+  width: 200px;
+  height: 110px;
+}
+.envelope__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.2s;
+  transform: translateY(-100%);
+  transform-origin: bottom;
+}
+.envelope__body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.paper {
+  background-color: #fff;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  transform: translateY(-40px);
+  transition: 0.2s;
+  bottom: 0;
+}
+
+.envelope__top_close {
+  transform: translateY(-110%) rotateX(180deg);
+  z-index: 2;
+}
+.paper_close {
+  transform: translateY(-10%);
+  height: 40px;
+}
+.text__mes {
+  display: none;
+}
+.header__menu {
+  position: absolute;
+  z-index: 1;
+  background-color: darkcyan;
+  width: 300px;
+  height: 200px;
+  padding: 40px;
+  display: none;
+}
+.is-active {
+  display: block;
+}
+.btn_menu {
+} */
+body {
+  background: #1c92c0;
+  background-image: url(https://free-png.ru/wp-content/uploads/2020/12/95-959040_snow-nieve-copo-copos-snowflake-snowflakes-nevada-snowf-5df39be0.png);
+}
+.envelope {
+  width: 250px;
+  height: 180px;
+  background-color: #fff;
+  border: 1px solid #1c92c0;
+  position: relative;
+  margin: 400px auto;
+}
+
+.envelope-flap {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 80px solid #e20d05;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+
+.envelope-body {
+  padding: 20px;
+}
+
+.envelope-content {
+  text-align: center;
+  border-radius: 20px;
+}
+
+.open-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+/* Модальное окно */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close__img {
+  width: 100%;
+  border-radius: 50%;
+}
+.close__text {
+  color: seagreen;
+  width: 100%;
+  font-size: large;
+  font-family: "Dancing Script", cursive;
+  font-style: italic;
+}
+.close__title {
+  text-align: center;
+}
+.text_a {
+  margin-left: 650px;
+  color: blueviolet;
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;500;600;700&display=swap");
+.char1,
+.char2,
+.char3,
+.char4,
+.char5,
+.char6,
+.char7,
+.char8,
+.char9,
+.char10,
+.char11,
+.char12,
+.char13,
+.char14,
+.char15,
+.char16,
+.char17,
+.char18,
+.char19,
+.char20,
+.char21,
+.char22,
+.char23,
+.char24 {
+  animation: color 3s infinite;
+}
+
+.char1 {
+  animation-delay: -0.1s;
+}
+
+.char2 {
+  animation-delay: 0.2s;
+}
+
+.char3 {
+  animation-delay: -0.3s;
+}
+
+.char4 {
+  animation-delay: 0.4s;
+}
+
+.char5 {
+  animation-delay: -0.5s;
+}
+
+.char6 {
+  animation-delay: 0.6s;
+}
+
+.char7 {
+  animation-delay: -0.7s;
+}
+
+.char8 {
+  animation-delay: 0.8s;
+}
+.char9 {
+  animation-delay: -0.5s;
+}
+
+.char10 {
+  animation-delay: 0.6s;
+}
+
+.char11 {
+  animation-delay: -0.7s;
+}
+
+.char12 {
+  animation-delay: 0.8s;
+}
+.char13 {
+  animation-delay: -0.1s;
+}
+.char14 {
+  animation-delay: 0.3s;
+}
+.char15 {
+  animation-delay: -0.5s;
+}
+.char16 {
+  animation-delay: 0.7s;
+}
+.char17 {
+  animation-delay: -0.3s;
+}
+.char18 {
+  animation-delay: 0.4s;
+}
+.char19 {
+  animation-delay: -0.5s;
+}
+.char20 {
+  animation-delay: 0.2s;
+}
+.char21 {
+  animation-delay: -0.4s;
+}
+.char22 {
+  animation-delay: 0.8s;
+}
+.char23 {
+  animation-delay: -0.2s;
+}
+.char24 {
+  animation-delay: 0.7s;
+}
+
+@keyframes color {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: yellow;
+  }
+}
